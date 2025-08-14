@@ -95,6 +95,7 @@ onUnmounted(()=>{
     @scroll="controlVolume"
   >
     <div
+      v-if="isClicked"
       class="volume w-full absolute bottom-0"
       :style="{
         height: height
